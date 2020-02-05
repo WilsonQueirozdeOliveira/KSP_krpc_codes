@@ -1,6 +1,10 @@
+#!/usr/bin/env python2
+
 import krpc
 import time
 import os
+
+conn = 0
 
 def main():
     connect_server()
@@ -36,7 +40,17 @@ def cycle():
 
 def connect_server():
     global conn
-    conn = krpc.connect(name='main')
+    #localhost
+    #conn = krpc.connect(name='main')
+    #localhost
+    
+    #server'192.168.56.1'
+    conn = krpc.connect(
+    name='My Example Program',
+    address='192.168.0.104',
+    rpc_port=50000, stream_port=50001)
+    #sever
+
     print(conn.krpc.get_status().version)
 
 def active_vessel():
