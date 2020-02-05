@@ -4,8 +4,6 @@ import krpc
 import time
 import os
 
-conn = 0
-
 def main():
     connect_server()
     active_vessel()
@@ -35,6 +33,8 @@ def cycle():
             vessel.control.activate_next_stage()
         if clock < 30.5 and clock > 30.0:
             vessel.control.throttle=0
+        if clock < 35.5 and clock > 35.0:
+            vessel.control.activate_next_stage()
         if clock>40:
             break
 
@@ -46,7 +46,7 @@ def connect_server():
     
     #server'192.168.56.1'
     conn = krpc.connect(
-    name='My Example Program',
+    name='main',
     address='192.168.0.104',
     rpc_port=50000, stream_port=50001)
     #sever
@@ -75,24 +75,18 @@ def def_clock():
 
 def def_screen():
     if not int((clock-seconds)*10):
-        os.system('cls')
-        print("clock:")
-        print(seconds)
-        
+        os.system('cls' if os.name == 'nt' else 'clear')#windows linux
+        print("clock:",seconds)        
         flight_info.mean_altitude
-        print("altitude(M):")
-        print(flight_info.mean_altitude)
+        print("altitude(M):",flight_info.mean_altitude)
 
         thrust = vessel.thrust
-        print("thrust(N):")
-        print(thrust)
+        print("thrust(N):",thrust)
         max_thrust = vessel.max_thrust
-        print("thrust(N):")
-        print(max_thrust)
+        print("max thrust(N):",max_thrust)
 
         g_force = flight_info.g_force
-        print("G_Force(g):")
-        print(g_force)
+        print("G_Force(g):",g_force)
             
 
 if __name__ == '__main__':
