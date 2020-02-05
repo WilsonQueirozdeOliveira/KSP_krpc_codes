@@ -4,6 +4,8 @@ import krpc
 import time
 import os
 
+conn = 0
+
 def main():
     connect_server()
     active_vessel()
