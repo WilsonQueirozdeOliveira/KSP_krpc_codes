@@ -2,8 +2,8 @@
 
 <p>linux:</p>
 <p>sudo apt install python</p>
-<p>sudo apt install python3-pip</p>
-<p>sudo pip install krpc</p>
+<p>sudo apt install python2-pip</p>
+<p>sudo pip2 install krpc</p>
 
 <p>windows:</p>
 <p>C:\Python27\Scripts\pip.exe install krpc</p>
