@@ -6,7 +6,7 @@ pip2 install krpc<br>
 kernel jupyter-notebook:<br>
 python2 -m pip install ipykernel<br>
 python2 -m ipykernel install --user<br>
-
+<br>
 <p>linux:</p>
 sudo apt install python<br>
 sudo apt install python2-pip<br>
