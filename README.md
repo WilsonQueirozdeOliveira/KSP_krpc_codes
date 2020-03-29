@@ -11,7 +11,7 @@ python2 -m ipykernel install --user<br>
 sudo apt install python<br>
 sudo apt install python2-pip<br>
 sudo pip2 install krpc<br>
-
+<br>
 <p>windows:</p>
 <p>C:\Python27\Scripts\pip.exe install krpc</p>
 
