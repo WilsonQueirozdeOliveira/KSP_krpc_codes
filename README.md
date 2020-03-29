@@ -1,5 +1,12 @@
 # Manual
 
+<p>conda:</p>
+<p>sudo apt install python-pip</p>
+<p>pip2 install krpc</p>
+<p>kernel jupyter-notebook:</p>
+<p>python2 -m pip install ipykernel</p>
+<p>python2 -m ipykernel install --user</p>
+
 <p>linux:</p>
 <p>sudo apt install python</p>
 <p>sudo apt install python2-pip</p>
