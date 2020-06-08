@@ -15,6 +15,13 @@ sudo pip2 install krpc<br>
 <p>windows:</p>
 <p>C:\Python27\Scripts\pip.exe install krpc</p>
 
-<p>krpc Documentation: https://krpc.github.io/krpc/index.html</p>
+<p>krpc Documentation: https://krpc.github.io/krpc/index.html
+<br>
+https://github.com/KSP-CKAN/CKAN/wiki/Installing-CKAN-on-Ubuntu
+<br>
+https://github.com/krpc/krpc/releases
+<br>
+Support for KSP 1.5.1
+</p>
 
 <p>TAPE Gaming (tutorial): https://www.youtube.com/watch?v=RQzWri_K_UY</p>
